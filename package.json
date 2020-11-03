@@ -1,0 +1,11 @@
+{
+  "name": "steph-verardo",
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephane Verardo",
+  "license": "ISC"
+}
