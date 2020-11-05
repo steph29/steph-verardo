@@ -7,5 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Stephane Verardo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steph29/steph-verardo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/steph29/steph-verardo/issues"
+  },
+  "homepage": "https://github.com/steph29/steph-verardo#readme"
 }
