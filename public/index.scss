@@ -1,0 +1,166 @@
+$color:  rgba(223, 151, 97, 1);
+@mixin inputStyle($radius, $margin, $padding) {
+  padding: $padding;
+  width: 100%;
+  border-radius: $radius;
+  box-shadow: none;
+  border: none;
+  margin: $margin;
+}
+
+html {
+  display: grid;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(30px, auto);
+  background-color: black;
+  color: lavender;
+  font-family: "Karla", sans-serif;
+}
+
+nav {
+  grid-column: 1/ 5;
+  grid-row: 1;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+
+}
+a{
+  color: $color;
+  text-decoration: none;
+  font-size: 1.7rem;
+
+}
+a:hover{
+  color:$color;
+}
+header {
+  padding: 5%;
+  grid-column: 1/5;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  padding: 40px;
+}
+.trait{
+  background-color: $color;
+  height: 3px;
+  
+}
+.name h3{
+  margin: 10px;
+  font-size: 1.3rem;
+}
+.cv {
+  height: 480px;
+  padding-bottom: 5%;
+  grid-column: 1 / 5;
+  grid-row: 3;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.experience, .diplome, .petit{
+  margin: 10px;
+  font-size: 1.3rem;
+  
+}
+.diplome {
+  height: 10px;
+}
+.petit {
+}
+.myLife {
+  grid-row: 4;
+  grid-column: 1 / 3;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 10%;
+  
+}
+.language{
+  grid-row: 5;
+  grid-column: 3 / 5;
+  padding-right: 10%;
+  ul{
+    padding: 0px;
+  }
+}
+
+.langue{
+   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  
+}
+.language li{
+  list-style: none;
+
+}
+.presentation{
+
+}
+.form {
+  height: 450px;
+  grid-row: 9;
+  grid-column: 1/5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.formulaire{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.formulaire h3 { 
+  margin: 0px;
+  text-align: center;
+}
+input, button, textarea {
+@include inputStyle(30px, 20px, 20px);
+}
+input, textarea{
+  color: $color;
+}
+.nameForm, .email, .button, .text {
+  display: flex;
+  justify-content: space-between;
+}
+textarea{
+  height: 150px;
+  resize: none;
+}
+button { 
+  background-color:$color;
+  color: white;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  grid-row: 12;
+  grid-column: 1/5;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+}
